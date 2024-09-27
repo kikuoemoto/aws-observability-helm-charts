@@ -1,0 +1,21 @@
+apiVersion: v1
+entries:
+  amazon-cloudwatch-observability:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-09-27T07:45:52.871217185Z"
+    description: A Helm chart for Amazon CloudWatch Observability
+    digest: 64220bdcc351a7970109c04471569f78801d5550cfc110bbfd27ce056e403d63
+    home: https://aws.amazon.com/cloudwatch/
+    maintainers:
+    - name: straussb
+    - name: lisaguo
+    - name: kausyas
+    name: amazon-cloudwatch-observability
+    sources:
+    - https://github.com/aws-observability/helm-charts/tree/main/charts/amazon-cloudwatch-observability
+    type: application
+    urls:
+    - https://github.com/kikuoemoto/aws-observability-helm-charts/releases/download/amazon-cloudwatch-observability-2.1.1/amazon-cloudwatch-observability-2.1.1.tgz
+    version: 2.1.1
+generated: "2024-09-27T07:45:52.871225751Z"
