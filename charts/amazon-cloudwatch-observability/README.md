@@ -12,9 +12,9 @@ Full instructions can be found in the [AWS documentation](https://docs.aws.amazo
 2. After you have installed Helm, enter the following commands. Replace my-cluster-name with the name of your cluster, and replace my-cluster-region with the Region that the cluster runs in.
 
 ```bash
-helm repo add aws-observability https://aws-observability.github.io/helm-charts
-helm repo update aws-observability
-helm install --wait --create-namespace --namespace amazon-cloudwatch amazon-cloudwatch aws-observability/amazon-cloudwatch-observability --set clusterName=my-cluster-name --set region=my-cluster-region
+helm repo add aws-observability-kemoto https://kikuoemoto.github.io/aws-observability-helm-charts
+helm repo update aws-observability-kemoto
+helm install --wait --create-namespace --namespace amazon-cloudwatch amazon-cloudwatch aws-observability-kemoto/amazon-cloudwatch-observability --set clusterName=my-cluster-name --set region=my-cluster-region
 ```
 
 By default, the helm chart will enable [Container Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html) enhanced observability with container logging, and [CloudWatch Application Signals](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html). This helps you to collect infrastructure metrics, application performance telemetry, and container logs from the Amazon EKS cluster.
